@@ -1,8 +1,10 @@
+import { Input } from '../ContactForm/ContactForm.styled';
+
 function Filter({ filter, onChange }) {
   return (
     <>
-      Find contacts by name
-      <input
+      Find contacts by name:
+      <Input
         type="text"
         name="filter"
         autoComplete="off"

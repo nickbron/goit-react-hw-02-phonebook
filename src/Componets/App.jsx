@@ -3,6 +3,7 @@ import shortid from 'shortid';
 import ContactForm from 'Componets/ContactForm/ContactForm';
 import ContactList from 'Componets/ContactList/ContactList';
 import Filter from 'Componets/Filter/Filter';
+import { Card } from './App.styled';
 
 export default class App extends Component {
   state = {
@@ -51,7 +52,7 @@ export default class App extends Component {
     );
 
     return (
-      <div className="wrap">
+      <Card>
         <h1 className="title">Phonebook</h1>
 
         <ContactForm onAdd={this.addNewContact} />
@@ -63,7 +64,7 @@ export default class App extends Component {
           contacts={findContacts}
           onDeleteContact={this.deleteContact}
         />
-      </div>
+      </Card>
     );
   }
 }
